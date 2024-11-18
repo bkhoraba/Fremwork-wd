@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        .main{
+            height: 100vh;
+            width: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            height: 400px;
+            width: 400px;
+            background-color: rgb(28, 160, 212);
+        }
+        .input{
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .input input{
+            height: 22px;
+            width: 180PX;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+        <div class="container">
+            <div class="input">
+                <input type="text" name="" id="pass">
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        let inPut = document.querySelector("#pass")
+        if(inPut.type === "password"){
+            inPut.type = "text"
+        }else{
+            inPut.type = "password"
+        }
+
+    </script>
+</body>
+</html>
