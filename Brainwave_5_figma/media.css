@@ -1,0 +1,13 @@
+@media (min-width: 992px) {
+    .container, .container-lg, .container-md, .container-sm {
+        max-width: 1000px;
+    }
+    
+}
+
+@media (min-width: 767px){
+    .background2{
+        height: 600px;
+        width: 100%;
+    }
+}

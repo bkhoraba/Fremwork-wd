@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.background{
+    height: 700px;
+    width: 100%;
+    background: url(imges/background.png) no-repeat bottom;
+    background-size: cover;
+    border-radius: 10px;
+    backdrop-filter: brightness(10%);
+    /* opacity: 59.5%; */
+}
+.main-colunm{
+    height: 600px;
+}
+.main-img img{
+    height: 150px;
+}
+.blue-back{
+    background: #473BF0;
+}
+.background2{
+    height: 700px;
+    width: 100%;
+    background: url(imges/background2.png) no-repeat bottom;
+    background-size: cover;
+    border-radius: 10px;
+    backdrop-filter: brightness(10%);
+}
+.ancher2 a{
+    text-decoration: none;
+    color: black;
+}
+.blue-anchar{
+    color:blue ;
+}
