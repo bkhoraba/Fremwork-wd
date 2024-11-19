@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    
+    <div class="main">
+        <div class="container">
+            <div class="main2">
+                <form  onsubmit="return validateForm()" name=",yFrom" action="" >
+                    <h4>Responsive Registration <br> Form</h4>
+                    <div class="input">
+                        <i class="fa-solid fa-envelope" style="color: #000000;"></i>
+                        <input type="email" name="ufn" id="email" placeholder="Email">
+                    </div>
+                    <div class="input">
+                        <i class="fa-solid fa-lock" style="color: #000000;"></i>
+                        <input type="password" name="pass" id="password" placeholder="password">
+                    </div>
+                    <div class="input">
+                        <i class="fa-solid fa-lock" style="color: #000000;"></i>
+                        <input type="password" name="repass" id="confirmPassword" placeholder="Re-type password">
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="male" id="gender">Male
+                        <input type="radio" name="male" id="gender2">Female
+                    </div>
+                    <div class="country">
+                        <select name="" id="count">
+                            <option value="">Select a country</option>
+                            <option value="">India</option>
+                            <option value="">U.S.A</option>
+                            <option value="">U.K</option>
+                        </select>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" name="" id="terms">I agree with terms and condition <br>
+                        <input type="checkbox" name="" id="chek2">I want to recieve the newsletter
+                    </div>
+                    <div class="btn">
+                        <button type="submit">Register</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
