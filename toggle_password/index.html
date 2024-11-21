@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+        integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <style>
+        .main {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sub {
+            position: relative;
+        }
+
+        .sub input {
+            height: 31px;
+            width: 200px;
+            padding: 0 35px 0 10px;
+        }
+
+        .sub i {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+        .container {
+            height: 400px;
+            width: 400px;
+            background-color: rgb(65, 165, 205);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="container">
+            <div class="sub">
+                <input type="text" id="passwordInput">
+                <i class="fa-solid fa-eye" id="toggleButton"></i>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('#toggleButton').click(function () {
+                const passwordInput = $('#passwordInput');
+                const icon = $(this);
+
+                // Using ternary operator
+                passwordInput.attr('type') === 'password'
+                    ? (passwordInput.attr('type', 'text'), icon.removeClass('fa-eye').addClass('fa-eye-slash'))
+                    : (passwordInput.attr('type', 'password'), icon.removeClass('fa-eye-slash').addClass('fa-eye'));
+            });
+        });
+    </script>
+
+</body>
+
+</html>
